@@ -1,0 +1,57 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "rules": {
+      "prettier/prettier": "error",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "no-param-reassign": ["error", { "props": false }],
+      "react/prop-types": [0],
+      "react/no-did-mount-set-state": [0],
+      "react/no-typos": [0],
+      "import/no-extraneous-dependencies": [
+          "error",
+          {
+              "devDependencies": [
+                  "**/*.test.js",
+                  "**/*.spec.js",
+                  "**/*.stories.jsx",
+                  "bdd/**/*.js",
+                  "nightwatch.conf.js",
+                  "server.js",
+                  "config-overrides.js"
+              ]
+          }
+      ],
+      "no-nested-ternary": "off",
+      "react/jsx-props-no-spreading": "off"
+  },
+  "globals": {
+      "SyntheticEvent": true,
+      "SyntheticAnimationEvent": true,
+      "SyntheticClipboardEvent": true,
+      "SyntheticCompositionEvent": true,
+      "SyntheticInputEvent": true,
+      "SyntheticUIEvent": true,
+      "SyntheticFocusEvent": true,
+      "SyntheticKeyboardEvent": true,
+      "SyntheticMouseEvent": true,
+      "SyntheticDragEvent": true,
+      "SyntheticWheelEvent": true,
+      "SyntheticTouchEvent": true,
+      "SyntheticTransitionEvent": true
+  },
+  "env": {
+      "es6": true,
+      "node": true,
+      "jest": true,
+      "browser": true
+  },
+  "settings": {
+      "import/resolver": {
+          "node": {
+              "moduleDirectory": ["node_modules", "src"]
+          }
+      }
+  }
+}
