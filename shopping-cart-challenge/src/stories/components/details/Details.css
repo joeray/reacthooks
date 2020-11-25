@@ -1,0 +1,44 @@
+* {
+    font-family: Avenir, 'Avenir Next', 'Segoe UI', sans-serif;
+}
+
+h1 {
+    margin-left: 0;
+}
+
+button {
+    border: none;
+}
+
+.product-link {
+    background-color: transparent;
+}
+
+.product-image {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    cursor: pointer;
+}
+
+.product-image img {
+    margin-right: 16px;
+    width: 72px;
+    height: 72px;
+    border: 1px solid #cacad1;
+    border-radius: 4px;
+}
+
+.product-code {
+    font-size: 12px;
+    line-height: 16px;
+    color: #c0c0c0;
+    font-weight: bold;
+    margin: 0;
+}
+
+.product-description h1 {
+    color: #7350ff;
+    text-transform: capitalize;
+    text-align: left;
+}

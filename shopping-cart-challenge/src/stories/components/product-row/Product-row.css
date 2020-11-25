@@ -1,0 +1,16 @@
+li {
+    list-style-type: none;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.row + .row {
+    margin-top: 32px;
+}
